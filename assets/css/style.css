@@ -22,8 +22,26 @@
     background-color: #525252;
 }
 
-/*--------------Headings--------------*/
+/*--------------Special Padding, Margins & Text--------------*/
+h1,h2,h3,h4 {
+    margin: 0;
+}
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/*--------------Headings--------------*/
 header{
     margin: 0;
 }
@@ -45,7 +63,7 @@ header{
 
 .name {
     font-family: "Exo", san-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
     color:#fff;
@@ -53,7 +71,7 @@ header{
 
 .title {
     font-family: "Roboto", san-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
@@ -68,6 +86,10 @@ header{
     font-size: 0;
 }
 
+#nav {
+    margin: 0;
+}
+
 #nav li {
     font-size: 14px;
     padding: 0;
@@ -77,6 +99,7 @@ header{
     height: 120px;
     text-align: center;
     padding: 0;
+    /* border-radius: 25% 25% 0% 0%; */
 }
 
 .menuitem a {
@@ -85,3 +108,53 @@ header{
     color:#fff;
     height: 120px;
 }
+
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*--------------Hoverings--------------*/
+
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 120px;
+
+}
+
+/*--------------Footer--------------*/
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 035s ease-in-out;
+    -moz-transition: all 035s ease-in-out;
+    -webkit-transition: all 035s ease-in-out;
+    -o-transition: all 035s ease-in-out;
+}
+
+.cv-pdf i:hover {
+    color: #e84610;
+} 
